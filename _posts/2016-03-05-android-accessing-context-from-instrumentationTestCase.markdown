@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Accessing context.getFilesDir() from InstrumentationTestCase"
+title:  Accessing context.getFilesDir() from InstrumentationTestCase
 date:   2016-03-05 12:34:00 +0000
 categories: android
 ---
