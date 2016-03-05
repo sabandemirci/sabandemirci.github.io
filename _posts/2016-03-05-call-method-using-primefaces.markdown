@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to call managed bean' s method using Primefaces
-categories: Android
+categories: Java
 excerpt: In order to fix getting null value problem while using Context.getFilesDir() inside InstrumentationTestCase,you need to create files directorory.
 ---
 
