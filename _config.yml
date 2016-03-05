@@ -5,7 +5,7 @@ copyright: sabandemirci
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
-disqus_shortname: sabandemirci
+disqus_shortname: "sabandemirci"
 facebook_username:
 twitter_username: "sabandemirci"
 linkedin_username: "şaban-demirci-50ab552a"
