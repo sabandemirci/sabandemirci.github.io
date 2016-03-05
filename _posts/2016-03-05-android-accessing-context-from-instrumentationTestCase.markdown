@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  Accessing context.getFilesDir() from InstrumentationTestCase
-date:   2016-03-05 12:34:00 +0000
-categories: android
+title: Accessing context.getFilesDir() from InstrumentationTestCase
+categories: Android
+excerpt: In order to fix getting null value problem while using Context.getFilesDir() inside InstrumentationTestCase,you need to create `files` directorory.
 ---
+
 In order to fix getting null value problem while using Context.getFilesDir() inside InstrumentationTestCase,you need to create `files` directorory.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
 
 {% highlight shell %}
 adb shell
