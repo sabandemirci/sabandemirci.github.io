@@ -12,7 +12,7 @@ Jekyll also offers powerful support for code snippets:
 
 {% highlight shell %}
 adb shell
-cd /data/data/<package_id_of_app>
+cd /data/data/package_id_of_app
 mkdir files
 {% endhighlight %}
 
