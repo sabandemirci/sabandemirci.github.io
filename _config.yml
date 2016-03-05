@@ -1,22 +1,20 @@
 title: Strata by HTML5 UP
 description: >
-  **I am Strata**, a super simple
-  responsive site template freebie
-  crafted by [HTML5 UP](http://html5up.net).
-copyright: Untitled
+  **I am Şaban**, GIS developer, JavaScript enthusiast, JAVA coder.
+copyright: sabandemirci
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
-disqus_shortname: stratajekylldemo
+disqus_shortname: sabandemirci
 facebook_username:
-twitter_username: "#"
-linkedin_username: "#"
-instagram_username:
-pinterest_username:
+twitter_username: "sabandemirci"
+linkedin_username: "şaban-demirci-50ab552a"
+instagram_username: "demirci.saban"
+pinterest_username: "demircisaban"
 flickr_username:
-github_username:  "#"
+github_username:  "sabandemirci"
 feed_icon: rss
-email: "#"
+email: "sabandmirci@gmail.com"
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
 paginate: 5
