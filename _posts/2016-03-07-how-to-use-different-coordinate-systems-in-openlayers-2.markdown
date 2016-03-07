@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use different coordinate systems in OpenLayers 2
-categories: Android
+categories: JavaScript
 excerpt: In order to use different coordinate systems in openlayers you need to add you map object projection and displayProjection attributes.
 ---
 
