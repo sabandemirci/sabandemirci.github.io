@@ -13,7 +13,7 @@ as
   FUNCTION CREATE_GUID RETURN VARCHAR2;
 end;
 /	
-create or replace package body COMMON
+create or replace package body CREATE_GUID
 as
   FUNCTION CREATE_GUID RETURN VARCHAR2
   AS
