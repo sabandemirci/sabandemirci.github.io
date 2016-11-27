@@ -8,48 +8,44 @@ excerpt: Here is creation of guid with curly braces with oracle
 Here is creation of guid with curly braces with oracle
 
 {% highlight sql %}
-create or replace package COMMON
+create or replace package GUID_GENERATOR
 as
-  FUNCTION NEW_ID RETURN VARCHAR2;
+  FUNCTION CREATE_GUID RETURN VARCHAR2;
 end;
-	/
-	
+/	
 create or replace package body COMMON
 as
-  FUNCTION NEW_ID RETURN VARCHAR2
+  FUNCTION CREATE_GUID RETURN VARCHAR2
   AS
     tmpRetVal VARCHAR2(100);
     tmpId RAW(16);
   BEGIN
     SELECT SYS_GUID() INTO tmpId FROM DUAL;
-    tmpRetVal := '{'
-     //SUBSTR(tmpId, 0, 8)
-                //'-'
-                //SUBSTR(tmpId, 8, 4)
-                //'-'
-                //SUBSTR(tmpId, 12, 4)
-                //'-'
-                //SUBSTR(tmpId, 16, 4)
-                //'-'
-                //SUBSTR(tmpId, 20, 13)
-                //'}';
-                
-    DBMS_OUTPUT.PUT_LINE('Original: '//tmpId//CHR(13)//'Formatted: '//tmpRetVal);
+    tmpRetVal := '{' 
+          ||SUBSTR(tmpId, 0, 8)
+          ||'-'
+          ||SUBSTR(tmpId, 8, 4)
+          ||'-'
+          ||SUBSTR(tmpId, 12, 4)
+          ||'-'
+          ||SUBSTR(tmpId, 16, 4)
+          ||'-'
+          ||SUBSTR(tmpId, 20, 13)
+          ||'}';
                 
     RETURN tmpRetVal;            
   END;
 end;
-/
 
 {% endhighlight %}
 
 Example usage:
 {% highlight sql %}
-	SELECT COMMON.NEW_ID FROM DUAL;
+	SELECT GUID_GENERATOR.CREATE_GUID FROM DUAL;
 {% endhighlight %}
 
 Output:
 
-{% highlight sql %}
-	{2D71F811-19F6-F4AC-C985-3DA501193F548}
+{% highlight %}
+	{4250F57F-FB03-213C-AE05-34132A8C01BA3}
 {% endhighlight %}
