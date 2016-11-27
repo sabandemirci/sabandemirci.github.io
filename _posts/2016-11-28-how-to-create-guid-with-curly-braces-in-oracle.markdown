@@ -46,6 +46,6 @@ Example usage:
 
 Output:
 
-{% highlight %}
+{% highlight sql %}
 	{4250F57F-FB03-213C-AE05-34132A8C01BA3}
 {% endhighlight %}
