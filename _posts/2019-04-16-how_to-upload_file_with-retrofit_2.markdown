@@ -30,13 +30,7 @@ Call<JsonObject> uploadFile(@Body RequestBody fileInputStream);
 {% highlight java %}
 File file = new File(document.getPath());
 byte[] byteArray = IOUtils.toByteArray(new FileInputStream(file));
-byte[] byteCompresss = AppUtils.compressGzip(byteArray);
-
-String ms5sum = FileUtils.md5(new ByteArrayInputStream(byteCompresss));
-
-RequestBody requestBody = RequestBody
-.create(MediaType.parse("application/octet-stream"), byteCompresss);
-
+RequestBody requestBody = RequestBody.create(MediaType.parse("application/octet-stream"), byteArray);
 Response<JsonObject> answer = restClient.getService().uploadFile(requestBody).execute();
 if (answer.isSuccessful()) {
     
