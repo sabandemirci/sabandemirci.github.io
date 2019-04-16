@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <hr>
+<h2 id="layout-posttitle-hpw-to-upload-file-with-retrofit-2categories-androidexcerpt-for-uploading-files-to-server-with-retrofit-2-here-is-two-way-to-manage-with">layout: post
+title: Hpw to upload file with retrofit 2
+categories: Android
+excerpt: For uploading files to server with <code>Retrofit 2</code> here is two way to manage with.</h2>
+<p>For uploading files to server with <code>Retrofit 2</code> here is two way to manage with.
+<em><strong>Solution 1</strong></em></p>
+<p>{% highlight shell %}
+adb shell
+cd /data/data/package_id_of_app
+mkdir files
+{% endhighlight %}</p>
+<p>Now following test assertion codes will  not fail.</p>
+<p>{% highlight java %}
+assertNotNull(getInstrumentation().getContext().getFilesDir());
+assertNotNull(getInstrumentation().getContext().openFileInput(&quot;aa.db&quot;));
+{% endhighlight %}</p>
+
+    </body>
+    </html>
