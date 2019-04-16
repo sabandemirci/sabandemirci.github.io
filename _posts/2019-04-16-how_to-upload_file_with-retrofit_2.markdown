@@ -2,9 +2,7 @@
 layout: post
 title: How to upload file with retrofit 2
 categories: Android
-excerpt: >-
-  For uploading files to server with `Retrofit 2` here is two way to manage
-  with.
+excerpt: For uploading files to server with `Retrofit 2` here is two way to manage with.
 published: true
 ---
 
