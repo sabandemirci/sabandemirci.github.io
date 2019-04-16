@@ -14,7 +14,7 @@ For uploading files to server with `Retrofit 2` using octet-stream content type
 @POST
 @Path("/uploadFile")
 @Consumes(MediaType.APPLICATION_OCTET_STREAM)
-public Response saveDocument(@Context HttpServletRequest request,InputStream fileInputStream) {
+public Response uploadFile(@Context HttpServletRequest request,InputStream fileInputStream) {
 {% endhighlight %}
 
 **Android**
