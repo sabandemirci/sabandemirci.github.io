@@ -15,6 +15,6 @@ flickr_username:
 github_username:  "sabandemirci"
 feed_icon: rss
 email: "sabandmirci@gmail.com"
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate_path: "/page/:num/"
 paginate: 5
